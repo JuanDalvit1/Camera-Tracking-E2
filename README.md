@@ -70,3 +70,50 @@ Disponibilizar as análises para o frontend.
 ✅ Criar um Dockerfile para containerizar a aplicação.
 ✅ Configurar o deploy (Heroku, AWS, ou outra solução).
 ✅ Criar a documentação (README.md) explicando como rodar e contribuir com o projeto.
+
+## Como Iniciar o Projeto
+
+### Backend
+
+1. Crie um ambiente virtual:
+
+   ```bash
+   python -m venv venv
+   ```
+
+2. Ative o ambiente virtual:
+
+   - No Windows:
+     ```bash
+     venv\Scripts\activate
+     ```
+   - No macOS/Linux:
+     ```bash
+     source venv/bin/activate
+     ```
+
+3. Instale as dependências:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Inicie o servidor FastAPI:
+   ```bash
+   uvicorn backend.main:app --reload
+   ```
+
+### Frontend
+
+1. Navegue até o diretório `frontend`:
+
+   ```bash
+   cd frontend
+   ```
+
+2. Inicie a aplicação Streamlit:
+   ```bash
+   streamlit run app.py
+   ```
+
+Agora você pode acessar a interface do frontend em `http://localhost:8501` e a API do backend em `http://localhost:8000`.
