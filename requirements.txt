@@ -1,0 +1,11 @@
+fastapi
+opencv-python
+tensorflow
+torch
+psycopg2-binary
+pymongo
+react
+vue
+streamlit
+docker
+sqlalchemy

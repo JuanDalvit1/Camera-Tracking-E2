@@ -1,4 +1,14 @@
 import cv2
+from fastapi import FastAPI
+from .database import models, config
+
+app = FastAPI()
+
+models.Base.metadata.create_all(bind=config.engine)
+
+@app.get("/")
+def read_root():
+    return {"Hello": "World"}
 
 def main():
     # RTSP stream URL
