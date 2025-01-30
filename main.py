@@ -18,7 +18,7 @@ class YOLODetector:
     
     def detect_objects(self, frame):
         return self.model(frame)
-
+ 
 class VideoCapture:
     def __init__(self, source):
         self.source = source
